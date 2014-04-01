@@ -36,13 +36,4 @@
         android:layout_marginTop="16dp"
         android:text="Submit" />
 
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btn_submit"
-        android:layout_below="@+id/btn_submit"
-        android:layout_marginTop="16dp" >
-    </ListView>
-
 </RelativeLayout>

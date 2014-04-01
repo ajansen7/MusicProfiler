@@ -89,7 +89,7 @@ public class MainActivity extends ActionBarActivity {
 		public void onClick(View v) {
 			TextView output = (TextView)v.getRootView().findViewById(R.id.txt_output);
 			EditText input = (EditText)v.getRootView().findViewById(R.id.edit_username);
-			user = input.getText().toString();
+			output.setText(input.getText().toString());
 			
 			Caller.getInstance().setDebugMode(true);
 //			Caller.getInstance().setCache(null);

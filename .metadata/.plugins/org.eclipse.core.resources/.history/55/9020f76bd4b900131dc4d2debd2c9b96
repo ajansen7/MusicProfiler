@@ -9,7 +9,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -89,7 +88,7 @@ public class MainActivity extends ActionBarActivity {
 		public void onClick(View v) {
 			TextView output = (TextView)v.getRootView().findViewById(R.id.txt_output);
 			EditText input = (EditText)v.getRootView().findViewById(R.id.edit_username);
-			user = input.getText().toString();
+			output.setText(input.getText().toString());
 			
 			Caller.getInstance().setDebugMode(true);
 //			Caller.getInstance().setCache(null);
@@ -105,7 +104,7 @@ public class MainActivity extends ActionBarActivity {
 		    for (Track t : topTracks) {
 		    	Collection<Tag> tags = t.getTopTags(t.getArtist().toString(), t.getMbid(), apiKey);
 		    	for (Tag tag : tags){
-		    		Log.d("tag", String.format("%s: %s", t.getName(), tag.getName()));
+		    		System.out.println(String.format("%s: %s", t.getName(), tag.getName()));
 		    	}
 		    }
 		    
