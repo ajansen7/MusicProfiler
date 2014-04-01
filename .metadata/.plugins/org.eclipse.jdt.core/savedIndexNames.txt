@@ -1,0 +1,6 @@
+INDEX VERSION 1.126+/Users/alexjansen/Development/Android/MusicProfiler/.metadata/.plugins/org.eclipse.jdt.core
+1136401512.index
+1270315800.index
+2819292409.index
+243842369.index
+2987505071.index
